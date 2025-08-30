@@ -3,9 +3,18 @@
   "version": "1.0.0",
   "description": "Mockified – Lightweight tool for generating customizable dummy JSON data with ease. Perfect for testing APIs, prototyping apps, and seeding databases.",
   "main": "index.js",
+  "module": "index.js",
   "type": "module",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "dist/"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"No build step yet\"",
+    "lint": "eslint . --ext .js,.ts",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -25,12 +34,23 @@
     "test-data",
     "mockify",
     "json-schema",
-    "json-stub"
+    "json-stub",
+    "api-testing",
+    "data-seeder",
+    "developer-tools",
+    "nodejs"
   ],
   "author": "Aromal S",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/DeveloperAromal/Mockified/issues"
   },
-  "homepage": "https://github.com/DeveloperAromal/Mockified#readme"
+  "homepage": "https://github.com/DeveloperAromal/Mockified#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  }
 }

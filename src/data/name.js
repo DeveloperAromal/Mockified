@@ -395,7 +395,7 @@ export const m_names = [
   "Zephyr",
 ];
 
-export const f_name = [
+export const f_names = [
   "Abigail",
   "Addison",
   "Alexa",
@@ -792,7 +792,7 @@ export const f_name = [
   "Zoelle",
 ];
 
-export const last_name = [
+export const last_names = [
   "Smith",
   "Johnson",
   "Williams",

@@ -6,7 +6,7 @@ const __dirname = path.dirname(__filename);
 
 export default {
   mode: "production",
-  entry: "./src/components/LinkLens.jsx",
+  entry: "./src/components/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
