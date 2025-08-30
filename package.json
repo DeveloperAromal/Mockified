@@ -1,0 +1,36 @@
+{
+  "name": "mockified",
+  "version": "1.0.0",
+  "description": "Mockified – Lightweight tool for generating customizable dummy JSON data with ease. Perfect for testing APIs, prototyping apps, and seeding databases.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeveloperAromal/Mockified.git"
+  },
+  "keywords": [
+    "mockified",
+    "dummy-json",
+    "json-mock",
+    "mock-data",
+    "fake-data",
+    "json-generator",
+    "schema-mock",
+    "data-faker",
+    "json-faker",
+    "mock-api-data",
+    "test-data",
+    "mockify",
+    "json-schema",
+    "json-stub"
+  ],
+  "author": "Aromal S",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DeveloperAromal/Mockified/issues"
+  },
+  "homepage": "https://github.com/DeveloperAromal/Mockified#readme"
+}
