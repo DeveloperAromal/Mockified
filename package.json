@@ -2,24 +2,20 @@
   "name": "mockified",
   "version": "1.0.0",
   "description": "Mockified – Lightweight tool for generating customizable dummy JSON data with ease. Perfect for testing APIs, prototyping apps, and seeding databases.",
-  "main": "index.js",
-  "module": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "type": "module",
-  "types": "index.d.ts",
-  "files": [
-    "index.js",
-    "dist/"
-  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "echo \"No build step yet\"",
-    "lint": "eslint . --ext .js,.ts",
-    "prepare": "npm run build"
+    "build": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "Aromal",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DeveloperAromal/Mockified.git"
   },
+  "homepage": "https://github.com/DeveloperAromal/Mockified#readme",
   "keywords": [
     "mockified",
     "dummy-json",
@@ -40,17 +36,28 @@
     "developer-tools",
     "nodejs"
   ],
-  "author": "Aromal S",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/DeveloperAromal/Mockified/issues"
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.1",
+    "stream-browserify": "^3.0.0"
   },
-  "homepage": "https://github.com/DeveloperAromal/Mockified#readme",
-  "engines": {
-    "node": ">=18.0.0"
-  },
-  "peerDependencies": {},
   "devDependencies": {
-    "eslint": "^8.0.0"
-  }
+    "@babel/core": "^7.22.20",
+    "@babel/preset-env": "^7.22.20",
+    "@babel/preset-react": "^7.22.5",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
 }

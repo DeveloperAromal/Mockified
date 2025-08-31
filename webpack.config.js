@@ -6,19 +6,20 @@ const __dirname = path.dirname(__filename);
 
 export default {
   mode: "production",
-  entry: "./src/components/index.js",
+  entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "main.js",
+    filename: "index.js", // npm convention
     library: {
-      type: "module",
+      type: "module", // modern ESM output
     },
+    clean: true, // clear old dist
   },
   experiments: {
-    outputModule: true,
+    outputModule: true, // required for library.type: "module"
   },
   externals: {
-    react: "react",
+    react: "react", // don’t bundle react
     "react-dom": "react-dom",
   },
   module: {
@@ -41,5 +42,13 @@ export default {
   },
   resolve: {
     extensions: [".js", ".jsx"],
+    fallback: {
+      crypto: false,
+      stream: false,
+      vm: false, // ✅ disables unnecessary polyfills
+    },
+  },
+  performance: {
+    hints: false,
   },
 };
